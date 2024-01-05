@@ -1,0 +1,81 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary);
+    min-height: 80vh;
+    background-color: var(--background);
+}
+
+.login .loginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--secondary);
+    padding: 30px;
+    position: relative;
+    z-index: 5;
+    width: 400px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+.login .loginform::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.login .loginform .header {
+    align-self: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.login .loginform p {
+    font-size: 20px;
+}
+
+.login .loginform .section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.login .loginform input {
+    border-radius: 5px;
+    height: 28px;
+    padding: 5px;
+}
+
+.login .err {
+    height: 20px;
+    align-self: center;
+    color: var(--quaternary);
+}
+
+@media (max-width:420px) {
+    .login .loginform {
+        width: 320px;
+        height: 350px;
+    }
+
+    .login .err p {
+        font-size: 18px;
+    }
+}

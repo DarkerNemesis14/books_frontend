@@ -1,0 +1,21 @@
+.button {
+    position: relative;
+    align-self: center;
+    width: 200px;
+    padding: 2px 10px;
+    margin-top: 50px;
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background: transparent;
+    border-radius: 8px;
+}
+  
+.button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition-delay: 0.2s;
+    cursor: pointer;
+}

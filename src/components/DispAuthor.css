@@ -1,0 +1,20 @@
+.author {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--quinary);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.author p {
+    color: var(--secondary);
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.author .name {
+    color: var(--primary);
+    font-size: 18px;
+}

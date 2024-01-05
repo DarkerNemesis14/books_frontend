@@ -1,0 +1,138 @@
+.error {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error .top,
+.error .bottom {
+    width: 100%;
+    height: 50vh;
+    color: white;
+    font-size: 200px;
+    font-weight: 600;
+}
+
+.error .top {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.error .top p {
+    position: absolute;
+    left: 50%;
+    bottom: -150px;
+    transform: translateX(-50%);
+    text-shadow: 0 0 1px red;
+    animation: topAnimation .8s linear infinite;
+}
+
+@keyframes topAnimation {
+    0% {
+        left: 50%;
+    }
+    5% {
+        left: 48%;
+        text-shadow: 5px 0 1px rgb(0, 68, 255);
+    }
+    10% {
+        left: 48%;
+        text-shadow: 5px 0 1px red;
+    }
+    15% {
+        left: 51%;
+        text-shadow: 5px 0 1px rgb(0, 68, 255);
+    }
+    20% {
+        left: 50%;
+    }
+    25% {
+        left: 51%;
+        text-shadow: 5px 0 1px red;
+    }
+    30% {
+        left: 52%;
+    }
+    35% {
+        left: 48%;
+        text-shadow: 5px 0 1px rgb(0, 68, 255);
+    }
+    40% {
+        left: 48%;
+        text-shadow: 5px 0 1px red;
+    }
+    45% {
+        left: 48%;
+        text-shadow: 5px 0 1px red;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+.error .bottom {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.error .bottom p {
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    text-shadow: 0 0 1px red;
+    animation: bottomAnimation .8s linear infinite;
+}
+
+@keyframes bottomAnimation {
+    0% {
+        left: 50%;
+    }
+    5% {
+        left: 52%;
+        text-shadow: 5px 0 1px rgb(0, 68, 255);
+    }
+    10% {
+        left: 52%;
+        text-shadow: 5px 0 1px red;
+    }
+    15% {
+        left: 51%;
+        text-shadow: 5px 0 1px rgb(0, 68, 255);
+    }
+    20% {
+        left: 50%;
+    }
+    25% {
+        left: 50%;
+        text-shadow: 5px 0 1px red;
+    }
+    30% {
+        left: 51%;
+    }
+    35% {
+        left: 48%;
+        text-shadow: 5px 0 1px rgb(0, 68, 255);
+    }
+    40% {
+        left: 48%;
+        text-shadow: 5px 0 1px red;
+    }
+    45% {
+        left: 50%;
+        text-shadow: 5px 0 1px red;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 50%;
+    }
+}
