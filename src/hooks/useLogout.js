@@ -15,7 +15,7 @@ const useLogout = () => {
     // function to handle logout request
     const logout = async (refresh) => {
         // request logout
-        await fetch("https://cors-anywhere.herokuapp.com/https://assignment.ongshak.com/rest-auth/logout/", {
+        await fetch("rest-auth/logout/", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ refresh })

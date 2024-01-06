@@ -21,7 +21,7 @@ const useLogin = () => {
     // function to handle login request
     const login = async (email, password) => {
         // request login
-        const response = await fetch("https://cors-anywhere.herokuapp.com/https://assignment.ongshak.com/rest-auth/login/", {
+        const response = await fetch("rest-auth/login/", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ email, password })

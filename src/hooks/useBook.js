@@ -26,7 +26,7 @@ const useBook = () => {
         }
 
         // fetch book list
-        const response = await fetch("https://cors-anywhere.herokuapp.com/https://assignment.ongshak.com/get_books/", {
+        const response = await fetch("get_books/", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + accessToken

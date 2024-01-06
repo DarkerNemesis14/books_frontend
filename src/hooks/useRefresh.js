@@ -22,7 +22,7 @@ const useRefresh = () => {
         // check access token expiration
         if (new Date(user.access_expire) <= new Date(timeNow)) {
             // request access token
-            const response = await fetch("https://cors-anywhere.herokuapp.com/https://assignment.ongshak.com/rest-auth/token/refresh/", {
+            const response = await fetch("rest-auth/token/refresh/", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({ refresh })
